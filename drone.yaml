@@ -1,0 +1,28 @@
+#Drone CI File for Amazon ECR Pushes
+#Commit Message: Initial
+#Author: Ravi
+
+kind: pipeline
+type: kubernetes
+name: default
+
+steps:
+
+- name: build
+  image: golang:1.13
+  commands:
+    - "go build -o ./myapp"
+
+- name: publish  
+  image: plugins/ecr
+  settings:
+    access_key: 
+      from_secret: aws_access_key
+    secret_key: 
+      from_secret: aws_secret_key
+    repo: 
+      from_secret: aws_ecr_repo
+    registry: 
+      from_secret: aws_ecr_registry
+    tags:
+        - '1.0.0_drone'

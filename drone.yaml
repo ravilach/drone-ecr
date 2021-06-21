@@ -1,5 +1,5 @@
 #Drone CI File for Amazon ECR Pushes
-#Commit Message: Initial Change WebHook
+#Commit Message: Initial Change
 #Author: Ravi
 
 kind: pipeline

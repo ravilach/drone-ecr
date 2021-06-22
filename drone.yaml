@@ -1,5 +1,5 @@
 #Drone CI File for Amazon ECR Pushes
-#Commit Message: Initial Change
+#Commit Message: Second Change
 #Author: Ravi
 
 kind: pipeline
@@ -27,4 +27,4 @@ steps:
     region:
       from_secret: aws_region
     tags:
-        - '1.0.0_drone'
+        - '1.0.1_drone'

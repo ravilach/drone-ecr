@@ -12,4 +12,9 @@ blog post also dives into how to leverage this to deploy via Amazon's new AWS Ap
 | aws_ecr_registry  | AWS ECR Registry address e.g “id.dkr.ecr.us-east-2.amazonaws.com” | 
 | aws_region  | AWS Region ECR is in for example “us-east-2” | 
 
+## Blog Post
+
+Check out the Harness Blog Post in setting up this example: 
+https://harness.io/blog/devops/drone-aws-app-runner/
+
 Happy learning!
